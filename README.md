@@ -33,7 +33,6 @@ Ficarei feliz em conectar e conversar sobre oportunidades!
 
 | Plataforma | Link |
 | :--- | :--- |
-| **LinkedIn** | [Connect with me](www.linkedin.com/in/douglas99d-barros-a289292b7) |
 | **E-mail** | [douglas.brrs99@gmail.com](mailto:douglas.brrs99@gmail.com) |
 | **GitHub** | [Outros repositórios](https://github.com/douglas99-png) |
 
