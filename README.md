@@ -27,24 +27,6 @@ O portfólio foi desenvolvido com foco em **código limpo, performance e acessib
 | **Hospedagem** | GitHub Pages |
 
 
-
-🚀 Como Executar o Projeto Localmente
-
-Se você deseja clonar e rodar este portfólio na sua máquina:
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/douglas99-png/portfolio.git](https://github.com/douglas99-png/portfolio.git)
-    ```
-2.  **Acesse o diretório do projeto:**
-    ```bash
-    cd portfolio
-    ```
-3.  **Abra o arquivo:**
-    Simplesmente abra o arquivo `index.html` em seu navegador.
-
-
-
 🔗 Meus Principais Links
 
 Ficarei feliz em conectar e conversar sobre oportunidades!
