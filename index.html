@@ -15,7 +15,6 @@
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursor-ring"></div>
  
-<!-- NAV -->
 <nav id="nav">
   <a href="#hero" class="nav-logo">DB<span>.</span></a>
   <ul class="nav-links">
@@ -28,7 +27,6 @@
   <a href="#contato" class="nav-cta">Fale comigo</a>
 </nav>
  
-<!-- HERO -->
 <section id="hero" style="padding:0;">
   <div class="hero">
     <div class="hero-bg">
@@ -64,7 +62,6 @@
   </div>
 </section>
  
-<!-- CONTADORES -->
 <div class="counters reveal">
   <div class="counter-item">
     <div class="counter-num" data-target="3">0</div>
@@ -84,7 +81,6 @@
   </div>
 </div>
  
-<!-- SOBRE -->
 <section id="sobre">
   <div class="sec-label">01 — sobre mim</div>
   <h2 class="sec-title">Quem sou eu</h2>
@@ -132,7 +128,6 @@
   </div>
 </section>
  
-<!-- SKILLS -->
 <section id="skills" class="skills-section">
   <div class="sec-label">02 — tecnologias</div>
   <h2 class="sec-title">Stack técnico</h2>
@@ -262,14 +257,13 @@
   </div>
 </section>
  
-<!-- EXPERIÊNCIA -->
 <section id="experiencia" class="exp-section">
   <div class="sec-label">04 — trajetória</div>
   <h2 class="sec-title">Experiência</h2>
   <div class="exp-timeline">
  
     <div class="exp-item reveal">
-      <div class="exp-date">2025<br>Brasília · CLT</div>
+      <div class="exp-date">2025 - 2026<br>Brasília · CLT</div>
       <div>
         <div class="exp-company">DIGISYSTEM</div>
         <div class="exp-role">Técnico de Atendimento e Suporte N1</div>
@@ -312,7 +306,6 @@
   </div>
 </section>
  
-<!-- CONTATO -->
 <section id="contato">
   <div class="sec-label">05 — contato</div>
   <h2 class="sec-title">Vamos conversar</h2>
@@ -367,14 +360,12 @@
   </div>
 </section>
  
-<!-- FOOTER -->
 <footer>
   <div class="foot-logo">DB<span>.</span></div>
   <div class="foot-copy">© 2025 Douglas Barros — Todos os direitos reservados</div>
 </footer>
  
 <script>
-// ── CURSOR ────────────────────────────────────────────────────
 const cur = document.getElementById('cursor');
 const ring = document.getElementById('cursor-ring');
 document.addEventListener('mousemove', e => {
@@ -390,21 +381,17 @@ document.querySelectorAll('a,button').forEach(el => {
   el.addEventListener('mouseleave', () => { ring.style.transform = 'translate(-50%,-50%) scale(1)'; ring.style.opacity = '.5'; });
 });
  
-// ── NAV SCROLL ────────────────────────────────────────────────
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
 });
  
-// ── REVEAL ────────────────────────────────────────────────────
 const obs = new IntersectionObserver((entries) => {
   entries.forEach((e, i) => {
     if (e.isIntersecting) {
       setTimeout(() => e.target.classList.add('visible'), i * 80);
-      // Anima skill bars
       e.target.querySelectorAll('.skill-bar').forEach(b => {
         b.style.width = b.dataset.width + '%';
       });
-      // Anima contadores
       e.target.querySelectorAll('.counter-num').forEach(n => {
         const target = parseInt(n.dataset.target);
         let cur = 0;
@@ -421,14 +408,12 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
  
-// ── WHATSAPP ──────────────────────────────────────────────────
 function enviarWpp() {
   const nome = document.getElementById('cf-nome').value.trim();
   const assunto = document.getElementById('cf-assunto').value;
   const msg = document.getElementById('cf-msg').value.trim();
   if (!nome || !msg) { alert('Preencha seu nome e a mensagem.'); return; }
-  // ⚠️ Troque o número abaixo pelo seu WhatsApp (só números, com DDI+DDD)
-  const numero = '5561999999999';
+  const numero = '+55 61 99245-1945';
   const texto = `*Contato via portfólio*\n\n*Nome:* ${nome}\n*Assunto:* ${assunto}\n\n*Mensagem:*\n${msg}`;
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
   window.open(url, '_blank');
