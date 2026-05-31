@@ -413,7 +413,7 @@ function enviarWpp() {
   const assunto = document.getElementById('cf-assunto').value;
   const msg = document.getElementById('cf-msg').value.trim();
   if (!nome || !msg) { alert('Preencha seu nome e a mensagem.'); return; }
-  const numero = '+55 61 99245-1945';
+  const numero = '5561992451945';
   const texto = `*Contato via portfólio*\n\n*Nome:* ${nome}\n*Assunto:* ${assunto}\n\n*Mensagem:*\n${msg}`;
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
   window.open(url, '_blank');
